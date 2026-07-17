@@ -1,85 +1,81 @@
-# Speech-to-Text & Text-to-Speech Web App
+# 🎙️ Text-To-Speech-And-Speech-To-Text
 
-A modern web application that enables real-time speech-to-text and text-to-speech conversion directly in your browser. Built with Flask and the Web Speech API.
+A Speech-to-Text (STT) and Text-to-Speech (TTS) application developed using Python that converts spoken words into text and transforms text into natural speech. The project provides real-time voice processing with a simple and user-friendly interface.
 
-## Features
+## 📌 Features
 
-- **Text-to-Speech (TTS)** — Convert any text to spoken audio using the browser's speech synthesis API
-- **Speech-to-Text (STT)** — Transcribe your voice to text using the browser's speech recognition API
-- **Clean UI** — Intuitive and responsive web interface
-- **No Backend Audio Processing** — Runs entirely on the browser for privacy and speed
+- 🎤 Convert speech to text in real time
+- 🔊 Convert text to natural speech
+- 🖥️ User-friendly interface
+- ⚡ Fast and accurate speech recognition
+- 🌐 Cross-platform support
 
-## Demo
+## 🛠️ Technologies Used
 
-Visit `http://localhost:5000` after running the app.
+- Python
+- SpeechRecognition
+- gTTS
+- pyttsx3
+- HTML
+- CSS
+- JavaScript
+- Flask (Optional)
 
-## Requirements
-
-- Python 3.8+
-- Flask 2.3.0+
-- A modern web browser (Chrome or Edge recommended for best speech recognition support)
-
-## Installation
-
-1. Clone or download this repository:
-   ```bash
-   git clone <your-repo-url>
-   cd speech-app
-   ```
-
-2. Install dependencies:
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
-
-## Usage
-
-1. Start the Flask server:
-   ```bash
-   python tts.py
-   ```
-
-2. Open your browser and navigate to:
-   ```
-   http://127.0.0.1:5000
-   ```
-
-3. Use the interface:
-   - **Text-to-Speech**: Enter text and click "Speak"
-   - **Speech-to-Text**: Click "Start Listening" and speak into your microphone
-
-4. Stop the server by pressing `Ctrl+C` in the terminal
-
-## Project Structure
+## 📂 Project Structure
 
 ```
-.
-├── tts.py                  # Flask application entry point
-├── requirements.txt        # Python dependencies
-├── templates/
-│   └── index.html          # Web interface (HTML, CSS, JavaScript)
-└── README.md               # This file
+Text-To-Speech-And-Speech-To-Text/
+│── app.py
+│── requirements.txt
+│── templates/
+│── static/
+│── README.md
 ```
 
-## Browser Compatibility
+## 🚀 Installation
 
-| Feature | Chrome | Edge | Firefox | Safari |
-|---------|--------|------|---------|--------|
-| Text-to-Speech | ✅ | ✅ | ✅ | ✅ |
-| Speech-to-Text | ✅ | ✅ | ❌ | ✅ |
+1. Clone the repository
 
-## Future Enhancements
+```bash
+git clone https://github.com/likhithapothuri1222-code/Text-To-Speech-And-Speech-To-Text.git
+```
 
-- [ ] Multi-language support
-- [ ] Speech rate and pitch control
-- [ ] Audio output file download (WAV/MP3)
-- [ ] Voice selection options
-- [ ] Recording and playback history
+2. Navigate to the project folder
 
-## License
+```bash
+cd Text-To-Speech-And-Speech-To-Text
+```
 
-This project is open source and available under the MIT License.
+3. Install the required packages
 
-## Author
+```bash
+pip install -r requirements.txt
+```
 
-Mini Project Team 11
+4. Run the application
+
+```bash
+python app.py
+```
+
+## 💡 Applications
+
+- Virtual Assistants
+- Accessibility Tools
+- Education
+- Customer Support
+- Voice-Based Applications
+
+## 👩‍💻 Team Members
+
+- P. Likhitha
+- K. Sanjesh
+- Shaik Abbas
+- B. Karunakar
+
+## 📄 License
+
+This project is developed for educational and learning purposes.
+
+---
+⭐ If you found this project helpful, don't forget to star the repository!
