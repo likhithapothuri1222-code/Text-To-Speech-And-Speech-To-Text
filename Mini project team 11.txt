@@ -1,0 +1,48 @@
+Speech-to-Text and Text-to-Speech - Quick Guide
+
+1) Speech-to-Text (Python example using SpeechRecognition):
+
+```python
+import speech_recognition as sr
+
+def speech_to_text_from_mic():
+	r = sr.Recognizer()
+	with sr.Microphone() as source:
+		print('Speak now...')
+		audio = r.listen(source)
+	try:
+		text = r.recognize_google(audio)
+		print('You said:', text)
+		return text
+	except sr.UnknownValueError:
+		print('Could not understand audio')
+	except sr.RequestError as e:
+		print('Recognition error:', e)
+
+if __name__ == '__main__':
+	speech_to_text_from_mic()
+```
+
+Requirements: pip install SpeechRecognition, PyAudio (or use pipwin for Windows to install PyAudio).
+
+2) Text-to-Speech (Python example using pyttsx3):
+
+```python
+import pyttsx3
+
+def text_to_speech(text):
+	engine = pyttsx3.init()
+	engine.say(text)
+	engine.runAndWait()
+
+if __name__ == '__main__':
+	text_to_speech('Hello, this is a text to speech test.')
+```
+
+Requirements: pip install pyttsx3
+
+Notes:
+- For higher accuracy or multi-language support, consider cloud APIs (Google Cloud Speech-to-Text, Azure Speech, Amazon Transcribe).
+- Ensure microphone drivers are installed and the app has permission to use the mic on Windows.
+
+End of file.
